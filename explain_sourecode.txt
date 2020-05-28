@@ -11,7 +11,7 @@ convert float to 32- bit integer
 function: int32();
 
 Random returns a single uniformly distributed random number in the interval (1,m)
-(Ngẫu nhiên trả về một số ngẫu nhiên phân phối đồng đều trong khoảng (0,1))
+(Ngẫu nhiên trả về một số ngẫu nhiên phân phối đồng đều trong khoảng (1,m))
 
 Then, calculate values to assign values to c array 
 (Tiếp theo dùng tính toán các giá trị gán vào mảng c)
