@@ -1,0 +1,25 @@
+Sampling rate
+(Tần số lấy mẫu)
+Fs=44100
+
+Initialize an c array with size is 1xm, array of all zeros
+(Khởi tạo mạng c với kích thước là 1xm, với tất cả các phần tử bằng 0)
+function: zeros();
+
+convert float to 32- bit integer
+(Chuyển đổi số thực sang số nguyên với bộ nhớ 32-bit integer)
+function: int32();
+
+Random returns a single uniformly distributed random number in the interval (1,m)
+(Ngẫu nhiên trả về một số ngẫu nhiên phân phối đồng đều trong khoảng (0,1))
+
+Then, calculate values to assign values to c array 
+(Tiếp theo dùng tính toán các giá trị gán vào mảng c)
+
+Use an audioplayer object to play audio data. The object contains properties that enable additional flexibility during playback.
+Sử dụng một đối tượng audioplayer để phát dữ liệu âm thanh. Đối tượng chứa các thuộc tính cho phép linh hoạt bổ sung trong khi phát lại
+functiong: audioplayer();
+
+Play audio from audioplayer object
+(Phát âm thanh từ đối tượng audioplayer)
+function: play()
