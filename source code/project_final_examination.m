@@ -1,5 +1,5 @@
 Fs=44100;
-m=2*fs;
+m=2*Fs;
 c=zeros(1,m);
 n=int32(Fs/440.0*2);
 b=rand(1,n)-0.5
