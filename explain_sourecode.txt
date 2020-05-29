@@ -1,4 +1,4 @@
-Sampling rate
+Sampling frequency
 (Tần số lấy mẫu)
 Fs=44100
 

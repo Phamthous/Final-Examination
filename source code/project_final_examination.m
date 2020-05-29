@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 clc;
 
 clear;
@@ -70,3 +71,17 @@ y = [PD5_1 PD5_05 PA5_1 PA5_05 PE5_05 PF5_05 PE5_05 PD5_15];
 plot(y)
 player=audioplayer(y,Fs);
 play(player);
+=======
+Fs=44100;
+m=2*Fs;
+c=zeros(1,m);
+n=int32(Fs/440.0*2);
+b=rand(1,n)-0.5
+for i=1:m
+    b(mod(i-1,n)+1)=0.5*(b(mod(i-1,n)+1)+ b(mod(i,n)+1));
+    c(i)= b(mod(i-1,n)+1);
+end
+plot(c);
+player=audioplayer(c,Fs);
+play(player);
+>>>>>>> 4ffe79bfea332342e7067548c40e386b09a9c130
