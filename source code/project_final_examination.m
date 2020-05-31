@@ -17,7 +17,7 @@ dt1=Ts:Ts:d1;
 dt2=Ts:Ts:d2;
 dt3=Ts:Ts:d3;
 
-PC5_dt2 = zeros(1,Fs*d2)
+PC5_dt2 = zeros(1,Fs*d2);
 PA5_dt2 = zeros(1,Fs*d2);
 PE5_dt2 = zeros(1,Fs*d2);
 PF5_dt2 = zeros(1,Fs*d2);
@@ -25,7 +25,7 @@ PB5_dt2 = zeros(1,Fs*d2);
 PD5_dt2 = zeros(1,Fs*d2);
 PG5_dt2 = zeros(1,Fs*d2);
 
-PC5_dt1 = zeros(1,Fs*d1)
+PC5_dt1 = zeros(1,Fs*d1);
 PA5_dt1 = zeros(1,Fs*d1);
 PE5_dt1 = zeros(1,Fs*d1);
 PF5_dt1 = zeros(1,Fs*d1);
@@ -33,7 +33,7 @@ PB5_dt1 = zeros(1,Fs*d1);
 PD5_dt1 = zeros(1,Fs*d1);
 PG5_dt1 = zeros(1,Fs*d1);
 
-PC5_dt3 = zeros(1,Fs*d3)
+PC5_dt3 = zeros(1,Fs*d3);
 PA5_dt3 = zeros(1,Fs*d3);
 PE5_dt3 = zeros(1,Fs*d3);
 PF5_dt3 = zeros(1,Fs*d3);
@@ -43,7 +43,7 @@ PG5_dt3 = zeros(1,Fs*d3);
 
 Amplitude = [1 0.1 0.33 0.06 0.05 0.045 0 0.02 0.005 0.005 0 0.005 0.01];
 
-for n=1:length(p);
+for n=1:length(Amplitude);
 
  PC5_dt1 = PC5_dt1 + Amplitude(n)*exp((-1)*dt1*3).*cos(2*pi*n*FC5*dt1);
  PD5_dt1 = PD5_dt1 + Amplitude(n)*exp((-1)*dt1*3).*cos(2*pi*n*FD5*dt1);
